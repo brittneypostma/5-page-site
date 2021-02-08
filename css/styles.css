@@ -238,11 +238,12 @@ input[type='submit']:focus {
 }
 
 a {
-  text-transform: uppercase;
-  text-decoration: none;
-  position: relative;
-  transition: var(--transition);
   color: var(--link-color);
+  position: relative;
+  text-decoration: none;
+  text-transform: uppercase;
+  transition: var(--transition);
+  white-space: nowrap;
 }
 
 /* custom link hover */
