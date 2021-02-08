@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <!-- Meta Tags -->
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Portfolio site for freelance web developer and UX/UI designer, Brittney Postma.">
+  <meta name="theme-color" content="#fafafa">
+  <!-- Open Graph -->
+  <meta property="og:url" content="https://brittneypostma.github.io/5-page-site/index.html">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Brittney Postma">
+  <meta property="og:description"
+    content="Portfolio site for freelance web developer and UX/UI designer, Brittney Postma.">
+  <meta property="og:image" content="https://brittneypostma.github.io/5-page-site/assets/images/og.jpg">
+
+  <!-- Twitter Meta Tags -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta property="twitter:domain" content="brittneypostma.github.io">
+  <meta property="twitter:url" content="https://brittneypostma.github.io/5-page-site/index.html">
+  <meta name="twitter:title" content="Brittney Postma">
+  <meta name="twitter:description"
+    content="Portfolio site for freelance web developer and UX/UI designer, Brittney Postma.">
+  <meta name="twitter:image" content="https://brittneypostma.github.io/5-page-site/assets/images/og.jpg">
+  <!-- Site -->
+  <link rel="icon" href="./assets/favicon.ico">
+  <link rel="apple-touch-icon" href="assets/images/apple-touch-icon.png">
+  <link rel="manifest" href="./assets/site.webmanifest">
+  <!-- Styles -->
+  <link rel="stylesheet" href="css/reset.css">
+  <link rel="stylesheet" href="css/styles.css" />
+  <link rel="stylesheet" href="css/contact.css">
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css">
+  <title>Brittney Postma|Contact</title>
+</head>
+
+<body>
+  <!-- *Header* -->
+  <header>
+    <div class="wrap">
+      <div class="logo">
+        <p class="accent-text">&lt;/&gt;</p>
+        <strong>BP</strong>
+      </div>
+      <button class="menu-icon" aria-label="toggle navigation menu">
+        <div class="line-1"></div>
+        <div class="line-2"></div>
+        <div class="line-3"></div>
+      </button>
+      <nav class="nav-menu">
+        <ul class="main-nav">
+          <li><a href="about.html" class="nav-links">About</a></li>
+          <li><a href="blog.html" class="nav-links">Blog</a></li>
+          <li><a href="projects.html" class="nav-links">Projects</a></li>
+          <li><a href="contact.html" class="nav-links">Contact</a></li>
+        </ul>
+        <ul class="socials">
+          <li>
+            <a href="mailto:bdesignedwebdev@gmail.com">
+              <i class="fas fa-envelope"></i>
+            </a>
+          </li>
+          <li>
+            <a href="https://twitter.com/BrittneyPostma" target="_blank" rel="noopener noreferrer">
+              <i class="fab fa-twitter"></i>
+            </a>
+          </li>
+          <li>
+            <a href="https://www.linkedin.com/in/brittney-postma-868928178/" target="_blank" rel="noopener noreferrer">
+              <i class="fab fa-linkedin"></i>
+            </a>
+          </li>
+          <li>
+            <a href="https://github.com/brittneypostma" target="_blank" rel="noopener noreferrer">
+              <i class="fab fa-github"></i>
+            </a>
+          </li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+  <!-- enctype="multipart/form-data" -->
+  <!-- *Contact Page* -->
+  <main class="contact main-wrap">
+    <section class="title">
+      <h1>Contact Me</h1>
+      <h2>Let's get in touch!</h2>
+      <h3>To request a quote or meet up for coffee, fill out the form and I will contact you back shortly.</h3>
+    </section>
+    <form action="https://api.mailslurp.com/forms?_to=928411aa-94be-400d-bcd7-d7c5da10f725@mailslurp.net" method="post">
+      <input type="hidden" name="_redirectTo" value="https://brittneypostma.github.io/5-page-site/success.html">
+
+      <div class="input-wrap">
+        <label for="">Name</label>
+        <input type="text" name="Name" class="input" placeholder="First Last" required />
+      </div>
+      <div class="input-wrap">
+        <label for="">Email</label>
+        <input type="email" name="Email" class="input" placeholder="email@domain.com" required />
+      </div>
+      <div class="input-wrap">
+        <label for="">Message</label>
+        <textarea rows="5" name="Message" class="input" placeholder="Drop me a line." required></textarea>
+      </div>
+      <button>Send</button>
+    </form>
+
+
+  </main>
+
+  <!-- *Footer* -->
+  <footer>
+    <div class="wrap">
+      <p class="text-sm">&copy;
+        <script>document.write(new Date().getFullYear())</script>
+        Brittney Postma
+      </p>
+      <ul class="socials">
+        <li>
+          <a href="https://twitter.com/BrittneyPostma" target="_blank" rel="noopener noreferrer">
+            <i class="fab fa-twitter"></i>
+          </a>
+        </li>
+        <li>
+          <a href="https://www.linkedin.com/in/brittney-postma-868928178/" target="_blank" rel="noopener noreferrer">
+            <i class="fab fa-linkedin"></i>
+          </a>
+        </li>
+        <li>
+          <a href="https://github.com/brittneypostma" target="_blank" rel="noopener noreferrer">
+            <i class="fab fa-github"></i>
+          </a>
+        </li>
+      </ul>
+    </div>
+  </footer>
+  <!-- Scripts -->
+  <script src="js/nav-menu.js"></script>
+</body>
+
+</html>

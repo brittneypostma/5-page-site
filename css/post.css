@@ -1,0 +1,17 @@
+.post {
+  padding: var(--2xl) var(--base);
+  max-width: var(--max-width);
+  margin: 0 auto;
+}
+
+article {
+  margin-top: var(--2xl);
+}
+
+p {
+  max-width: 65ch;
+}
+
+img {
+  max-height: 500px;
+}
