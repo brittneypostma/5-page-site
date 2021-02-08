@@ -27,9 +27,9 @@
 
   /* *Font Size* */
   --heading-1: clamp(3.5rem, 3.5rem + 2vw, 8rem);
-  --heading-2: clamp(2rem, 2rem + 2vw, 2.75rem);
-  --heading-3: clamp(1.5rem, 1.5rem + 2vw, 2rem);
-  --heading-4: clamp(1.25rem, 1.25rem + 2vw, 1.75rem);
+  --heading-2: clamp(2.75rem, 2rem + 2vw, 3.25rem);
+  --heading-3: clamp(2.5rem, 1.5rem + 2vw, 3rem);
+  --heading-4: clamp(2rem, 2rem + 2vw, 2.25rem);
   --text-base: clamp(1rem, 1rem + 1vw, 1.25rem);
   --text-sm: clamp(0.75rem, 0.75rem + 1vw, 1rem);
 
@@ -76,12 +76,13 @@
   --btn-hover: brightness(1.2);
 }
 
-/* *Scrollbars */
+/* *Scrollbar* */
 :root {
   scrollbar-width: thin;
   scrollbar-color: var(--accent) var(--primary);
 }
-::root:-webkit-scrollbar {
+
+:root::-webkit-scrollbar {
   width: 8px;
 }
 :root::-webkit-scrollbar-track {
@@ -149,6 +150,10 @@ header {
   font-weight: 700;
   line-height: 1;
   letter-spacing: var(--none);
+}
+
+.logo::before {
+  background: transparent;
 }
 
 .logo strong {
@@ -286,12 +291,8 @@ button[role='button']::before {
 
 /* *Footer Styles* */
 footer {
-  position: sticky;
-  bottom: 0;
-  grid-row: 3/-1;
-  text-align: center;
-  background: var(--primary);
-  z-index: 50;
+  display: flex;
+  justify-content: center;
 }
 
 .socials {
@@ -308,25 +309,6 @@ footer {
 
 .socials a:hover {
   color: var(--accent);
-}
-
-/* *Scrollbar* */
-:root {
-  scrollbar-width: thin;
-  scrollbar-color: var(--accent) var(--primary);
-}
-
-:root::-webkit-scrollbar {
-  width: 8px;
-}
-:root::-webkit-scrollbar-track {
-  background: var(--primary);
-}
-:root::-webkit-scrollbar-thumb {
-  background: var(--accent);
-}
-:root::-webkit-scrollbar-thumb:hover {
-  background: var(--hover);
 }
 
 /* *Text* */
