@@ -28,12 +28,20 @@
   <link rel="apple-touch-icon" href="assets/images/apple-touch-icon.png">
   <link rel="manifest" href="./assets/site.webmanifest">
   <!-- Styles -->
-  <link rel="stylesheet" href="css/reset.css">
+  <link rel="stylesheet" href="css/reset.css" />
   <link rel="stylesheet" href="css/styles.css" />
   <link rel="stylesheet" href="css/blog.css" />
+
   <!-- Font Awesome -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css">
-  <title>Brittney Postma|Blog</title>
+
+  <!-- Scripts -->
+  <script defer src="js/nav-menu.js"></script>
+  <!-- Animate on Scroll -->
+  <script defer src="https://unpkg.com/aos@next/dist/aos.js"></script>
+  <script defer src="js/aos.js"></script>
+
+  <title>Brittney Postma</title>
 </head>
 
 <body>
@@ -81,31 +89,53 @@
       </nav>
     </div>
   </header>
-  <!-- *Blog Page* -->
-  <main class="blog main-wrap">
-    <section class="title">
-      <h1>Blog</h1>
-      <h2>My recent posts</h2>
-    </section>
-    <section class="posts">
-      <template id="blog-card">
 
-        <article>
-          <a role="button" class="article-link" href="">
-            <img src="" alt="">
-            <div class="card-text">
-              <h3></h3>
-              <p>
-                <i class="far fa-calendar-alt"></i>
-                <span class="date"></span>
-              </p>
-              <p class="excerpt"></p>
-          </a>
-          <a role="button" class="btn-secondary" href="">Read More</a>
+  <!-- *Home Page* -->
+  <main>
+    <section class="section">
+      <h1>Posts</h1>
+      <div class="cards post-cards">
+        <a href="post/post-1.html" class="card">
+          <img src="assets/images/project-1.jpg" alt="" loading="lazy">
+          <div class="card-text">
+            <h2>Post 1</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut mi vitae integer ornare consectetur morbi
+              vulputate. Turpis hac sit ac amet et metus. Faucibus diam lacus vestibulum nulla eget id vitae tristique
+              eget.
+              Mattis egestas diam risus diam augue malesuada scelerisque. Sed nunc eget gravida laoreet nunc.</p>
           </div>
-        </article>
-
-      </template>
+        </a>
+        <a href="post/post-2.html" class="card">
+          <img src="assets/images/project-2.jpg" alt="" loading="lazy">
+          <div class="card-text">
+            <h2>Post 2</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut mi vitae integer ornare consectetur morbi
+              vulputate. Turpis hac sit ac amet et metus. Faucibus diam lacus vestibulum nulla eget id vitae tristique
+              eget.
+              Mattis egestas diam risus diam augue malesuada scelerisque. Sed nunc eget gravida laoreet nunc.</p>
+          </div>
+        </a>
+        <a href="post/post-3.html" class="card">
+          <img src="assets/images/project-3.jpg" alt="" loading="lazy">
+          <div class="card-text">
+            <h2>Post 3</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut mi vitae integer ornare consectetur morbi
+              vulputate. Turpis hac sit ac amet et metus. Faucibus diam lacus vestibulum nulla eget id vitae tristique
+              eget.
+              Mattis egestas diam risus diam augue malesuada scelerisque. Sed nunc eget gravida laoreet nunc.</p>
+          </div>
+        </a>
+        <a href="post/post-4.html" class="card">
+          <img src="assets/images/project-4.jpg" alt="" loading="lazy">
+          <div class="card-text">
+            <h2>Post 4</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut mi vitae integer ornare consectetur morbi
+              vulputate. Turpis hac sit ac amet et metus. Faucibus diam lacus vestibulum nulla eget id vitae tristique
+              eget.
+              Mattis egestas diam risus diam augue malesuada scelerisque. Sed nunc eget gravida laoreet nunc.</p>
+          </div>
+        </a>
+      </div>
     </section>
     <!-- *Footer* -->
     <footer>
@@ -115,14 +145,6 @@
       </p>
     </footer>
   </main>
-
-
-  <!-- Scripts -->
-  <script src="js/nav-menu.js"></script>
-  <script type="module">
-    import { loadPosts } from './js/load-posts.js'
-    loadPosts()
-  </script>
 </body>
 
 </html>

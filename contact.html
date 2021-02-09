@@ -30,7 +30,6 @@
   <!-- Styles -->
   <link rel="stylesheet" href="css/reset.css">
   <link rel="stylesheet" href="css/styles.css" />
-  <link rel="stylesheet" href="css/contact.css">
   <!-- Font Awesome -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css">
   <title>Brittney Postma|Contact</title>
@@ -81,31 +80,42 @@
       </nav>
     </div>
   </header>
-  <!-- enctype="multipart/form-data" -->
   <!-- *Contact Page* -->
-  <main class="contact main-wrap">
-    <section class="title">
-      <h1>Contact Me</h1>
-      <h2>Let's get in touch!</h2>
-      <h3>To request a quote or meet up for coffee, fill out the form and I will contact you back shortly.</h3>
+  <main>
+    <section class="section">
+      <h1>Contact</h1>
+      <div class="contacts">
+        <div class="contact-wrap">
+          <h2 class="accent-text">Have a business proposal?<br />Drop us a line...</h2>
+          <a href="mailto:email@email.com" class="email"><i class="fas fa-envelope"></i>
+            <p>email@email.com</p>
+          </a>
+        </div>
+        <div class="contact-wrap">
+          <h2 class="accent-text">Or connect with us<br />on socials</h2>
+          <ul class="socials">
+            <li>
+              <a href="https://twitter.com/BrittneyPostma" target="_blank" rel="noopener noreferrer">
+                <i class="fab fa-twitter"></i>
+              </a>
+            </li>
+            <li>
+              <a href="https://www.linkedin.com/in/brittney-postma-868928178/" target="_blank"
+                rel="noopener noreferrer">
+                <i class="fab fa-linkedin"></i>
+              </a>
+            </li>
+            <li>
+              <a href="https://github.com/brittneypostma" target="_blank" rel="noopener noreferrer">
+                <i class="fab fa-github"></i>
+              </a>
+            </li>
+          </ul>
+          </a>
+        </div>
+      </div>
     </section>
-    <form action="https://api.mailslurp.com/forms?_to=928411aa-94be-400d-bcd7-d7c5da10f725@mailslurp.net" method="post">
-      <input type="hidden" name="_redirectTo" value="https://brittneypostma.github.io/5-page-site/success.html">
 
-      <div class="input-wrap">
-        <label for="">Name</label>
-        <input type="text" name="Name" class="input" placeholder="First Last" required />
-      </div>
-      <div class="input-wrap">
-        <label for="">Email</label>
-        <input type="email" name="Email" class="input" placeholder="email@domain.com" required />
-      </div>
-      <div class="input-wrap">
-        <label for="">Message</label>
-        <textarea rows="5" name="Message" class="input" placeholder="Drop me a line." required></textarea>
-      </div>
-      <button>Send</button>
-    </form>
 
     <!-- *Footer* -->
     <footer>

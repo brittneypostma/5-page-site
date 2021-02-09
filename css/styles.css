@@ -107,6 +107,54 @@ body {
   color: var(--text-color);
 }
 
+.cards,
+.section {
+  display: grid;
+  gap: var(--3xl);
+  flex-grow: 1;
+}
+
+.card {
+  background: var(--card-bg);
+  display: grid;
+  flex-grow: 1;
+  text-transform: unset;
+  white-space: unset;
+}
+
+.card:before {
+  background: transparent;
+}
+
+.card h2,
+.card h4 {
+  color: var(--accent);
+}
+
+.card > img {
+  width: 100%;
+  height: 400px;
+  object-fit: cover;
+}
+
+.card-row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--3xl);
+}
+
+.card-text {
+  padding: var(--md);
+  display: grid;
+  gap: var(--md);
+}
+
+.grid-grow {
+  display: grid;
+  gap: var(--3xl);
+  flex-grow: 1;
+}
+
 main {
   display: grid;
   gap: 10vh;
@@ -118,7 +166,6 @@ main {
   position: relative;
   top: 112px;
 }
-
 .wrap {
   display: flex;
   justify-content: space-between;
@@ -154,11 +201,6 @@ header {
 
 .logo::before {
   background: transparent;
-}
-
-.logo strong {
-  position: relative;
-  left: -1px;
 }
 
 /* Navigation */
@@ -312,10 +354,41 @@ footer {
   color: var(--accent);
 }
 
+/* *Pages* */
+/* Contact */
+.contacts {
+  display: grid;
+  gap: var(--md);
+}
+.contact-wrap {
+  display: grid;
+  gap: var(--md);
+}
+
+.email {
+  display: flex;
+  align-items: center;
+  gap: var(--md);
+}
+
+.email:hover,
+.email:focus {
+  color: var(--accent);
+}
+
+.email::before {
+  background: transparent;
+}
+/* Posts */
+.post-cards {
+  display: flex;
+  flex-wrap: wrap;
+}
+
 /* *Text* */
 .accent-text {
   color: var(--accent);
-  letter-spacing: var(--loose);
+  letter-spacing: var(--none);
   font-weight: 800;
 }
 
@@ -347,6 +420,7 @@ h2 {
 }
 
 h3 {
+  color: var(--accent);
   font-size: var(--heading-3);
 }
 
@@ -359,9 +433,30 @@ h4 {
 }
 
 /* *Breakpoints* */
-@media (min-width: 1024px) {
+@media (min-width: 1200px) {
+  .contacts {
+    display: flex;
+    flex-wrap: wrap;
+    gap: var(--md);
+    justify-content: space-between;
+  }
+
+  .contact-wrap:last-child {
+    text-align: right;
+    justify-items: end;
+  }
+  header .socials {
+    display: none;
+  }
+  .grow {
+    flex: 1 1 500px;
+  }
   main {
     padding: var(--3xl);
+  }
+  .main-nav {
+    top: 0;
+    display: flex;
   }
   .menu-icon {
     display: none;
@@ -372,27 +467,13 @@ h4 {
     display: flex;
     height: auto;
   }
-  .main-nav {
-    top: 0;
-    display: flex;
-  }
-
   .open-nav {
     background: transparent;
   }
 
-  header .socials {
-    display: none;
-  }
-
-  .title {
-    max-width: 65ch;
-    color: var(--white);
-    padding: var(--2xl);
-    padding-left: 4rem;
-    background: var(--accent);
-    border-top-left-radius: 10rem;
-    border-bottom-right-radius: 10rem;
+  .cards > * {
+    margin: var(--md) 0;
+    flex-basis: 45%;
   }
   .wrap {
     padding: var(--md) var(--3xl) var(--2xl);

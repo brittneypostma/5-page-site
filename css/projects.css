@@ -1,15 +1,10 @@
-.portfolio {
-  padding: var(--sm);
-  display: grid;
-  gap: var(--2xl);
-  align-items: center;
-}
-
-.projects {
-  display: grid;
-  gap: var(--2xl);
-  margin-bottom: var(--2xl);
-}
+/* *Projects Page* */
+/* .projects {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--md);
+  margin: 0 auto;
+} */
 
 .project-1,
 .project-3 {
@@ -19,16 +14,12 @@
 .project-card {
   background: var(--card-bg);
   position: relative;
-  border-radius: var(--rounded-sm);
   box-shadow: var(--shadow-md);
-  max-width: 500px;
 }
 
 .project-image > img {
-  border-top-left-radius: var(--rounded-sm);
-  border-top-right-radius: var(--rounded-sm);
   width: 100%;
-  max-height: 250px;
+  max-height: 500px;
 }
 
 .project-image > i {
@@ -37,14 +28,14 @@
   height: 50px;
   width: 50px;
   padding: var(--base);
-  border-bottom-right-radius: var(--rounded-sm);
+  border-bottom-right-radius: var(--rounded-lg);
   background: var(--accent);
 }
 
 .project-text {
   display: grid;
-  gap: var(--base);
-  padding: var(--base);
+  gap: var(--md);
+  padding: var(--md);
 }
 
 .project-image {
@@ -54,6 +45,7 @@
 @media (min-width: 1024px) {
   .projects {
     display: flex;
+    justify-content: center;
   }
   .project-col-2 {
     margin-top: 5rem;
