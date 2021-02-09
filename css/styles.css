@@ -446,9 +446,6 @@ h4 {
   header .socials {
     display: none;
   }
-  /* .grow {
-    flex: 1 1 500px;
-  } */
   main {
     padding: var(--3xl);
   }
