@@ -9,9 +9,11 @@
   color: var(--accent);
 }
 
+h2,
 h3 {
   color: var(--white);
 }
+
 /* *Skills* */
 .section:last-child {
   margin-top: 10vh;

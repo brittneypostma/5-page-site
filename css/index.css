@@ -19,6 +19,10 @@
   font-size: 3rem;
 }
 
+.hero h1 {
+  font-size: clamp(3.5rem, 3.5rem + 2vw, 8rem);
+}
+
 .heading h2 {
   text-transform: unset;
   font-size: var(--text-base);
@@ -30,6 +34,11 @@
 
 .heading-wrap {
   display: grid;
+}
+
+.big-links {
+  font-size: var(--heading-4);
+  font-family: var(--font-heading);
 }
 
 .bottom-links {

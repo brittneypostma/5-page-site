@@ -4,15 +4,6 @@
   align-items: start;
 }
 
-.title {
-  margin-top: var(--base);
-  padding-right: 5rem;
-}
-
-.title > h2 {
-  --heading-2: var(--heading-4);
-}
-
 .posts {
   padding: var(--base);
   display: flex;
@@ -66,13 +57,13 @@ article * + * {
   max-width: 350px;
 }
 
-.card-text {
+/* .card-text {
   min-width: 340px;
   margin: 0;
   padding: var(--base) var(--lg);
   display: grid;
   gap: var(--sm);
-}
+} */
 
 article h3 {
   letter-spacing: var(--tight);
