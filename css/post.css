@@ -1,7 +1,10 @@
-.post {
-  padding: var(--2xl) var(--base);
-  max-width: var(--max-width);
+/* *Post Page */
+.section {
   margin: 0 auto;
+}
+
+.section a:hover:before {
+  width: 2%;
 }
 
 article {

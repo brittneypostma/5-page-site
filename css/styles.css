@@ -107,13 +107,16 @@ body {
   color: var(--text-color);
 }
 
-.cards,
 .section {
   display: grid;
   gap: var(--3xl);
-  flex-grow: 1;
 }
-
+.cards {
+  display: flex;
+  flex-wrap: wrap;
+  flex-grow: 1;
+  gap: var(--3xl);
+}
 .card {
   background: var(--card-bg);
   display: grid;
@@ -379,11 +382,6 @@ footer {
 .email::before {
   background: transparent;
 }
-/* Posts */
-.post-cards {
-  display: flex;
-  flex-wrap: wrap;
-}
 
 /* *Text* */
 .accent-text {
@@ -448,9 +446,9 @@ h4 {
   header .socials {
     display: none;
   }
-  .grow {
+  /* .grow {
     flex: 1 1 500px;
-  }
+  } */
   main {
     padding: var(--3xl);
   }
@@ -472,9 +470,9 @@ h4 {
   }
 
   .cards > * {
-    margin: var(--md) 0;
     flex-basis: 45%;
   }
+
   .wrap {
     padding: var(--md) var(--3xl) var(--2xl);
   }
