@@ -20,7 +20,7 @@
 }
 
 .hero h1 {
-  font-size: clamp(3.5rem, 3.5rem + 2vw, 8rem);
+  font-size: clamp(2.75rem, 2.75rem + 2vw, 6rem);
 }
 
 .heading h2 {

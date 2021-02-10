@@ -26,7 +26,7 @@
     Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 
   /* *Font Size* */
-  --heading-1: clamp(3.5rem, 3.5rem + 2vw, 4rem);
+  --heading-1: clamp(2.75rem, 2.75rem + 2vw, 4rem);
   --heading-2: clamp(2.5rem, 2rem + 2vw, 3rem);
   --heading-3: clamp(2rem, 1.5rem + 2vw, 2.5rem);
   --heading-4: clamp(1.5rem, 2rem + 2vw, 2rem);
@@ -172,6 +172,7 @@ main {
 .section {
   display: grid;
   gap: var(--3xl);
+  grid-template-columns: minmax(0, 1fr);
 }
 
 .wrap {
@@ -205,6 +206,8 @@ header {
   font-weight: 700;
   line-height: 1;
   letter-spacing: var(--none);
+  position: relative;
+  z-index: 50;
 }
 
 .logo::before {
@@ -372,17 +375,16 @@ footer {
   margin: 0 auto var(--base);
 }
 
-.contacts h2,
-.contacts h4 {
-  color: var(--accent);
-}
-
 .contact-wrap {
   display: grid;
   align-content: center;
   gap: var(--md);
 }
 
+.contact-wrap h2,
+.contact-wrap h4 {
+  color: var(--accent);
+}
 .email {
   display: flex;
   align-items: center;
