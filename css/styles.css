@@ -178,6 +178,8 @@ main {
   display: grid;
   gap: var(--3xl);
   grid-template-columns: minmax(0, 1fr);
+  opacity: 0;
+  animation: fade-in var(--short) forwards;
 }
 
 .wrap {
@@ -539,4 +541,3 @@ h4 {
     transform: translateX(0);
   }
 }
-
