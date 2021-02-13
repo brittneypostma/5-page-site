@@ -17,7 +17,6 @@
   /* *Containers* */
   --width: 80vw;
   --max-width: 2000px;
-  --center-column: min(80ch, calc(100vw - 1rem));
 
   /* *Font Family* */
   --font-heading: 'Oswald', -apple-system, BlinkMacSystemFont, 'Segoe UI',

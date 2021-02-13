@@ -57,14 +57,6 @@ article * + * {
   max-width: 350px;
 }
 
-/* .card-text {
-  min-width: 340px;
-  margin: 0;
-  padding: var(--base) var(--lg);
-  display: grid;
-  gap: var(--sm);
-} */
-
 article h3 {
   letter-spacing: var(--tight);
   border-bottom: var(--sm) solid var(--primary);
