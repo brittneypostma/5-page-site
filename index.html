@@ -38,6 +38,11 @@
   <!-- Scripts -->
   <script defer src="js/nav-menu.js"></script>
 
+  <script defer src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.6.0/gsap.min.js"></script>
+  <script defer src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.6.0/CSSRulePlugin.min.js"></script>
+  <script defer src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.6.0/ScrollTrigger.min.js"></script>
+  <script defer src="js/animations.js"></script>
+
   <title>Brittney Postma</title>
 </head>
 
@@ -92,7 +97,8 @@
     <!-- Hero -->
     <section class="hero">
       <section class="heading">
-        <img src="assets/images/profile.jpg" alt="headshot of Brittney Postma" class="profile-img" loading="lazy">
+        <img src="assets/images/profile.jpg" alt="headshot of Brittney Postma" class="profile-img" width="500"
+          height="500">
         <div>
           <h1>
             Brittney<br />Postma
@@ -137,10 +143,10 @@
     </section>
     <section id="posts" class="section">
       <h3>Recent<br />Posts</h3>
-      <div class="cards">
+      <div class="cards animate-right">
         <!-- alt with no text will skip over the image when using a screenreader, not including alt will cause it to read the filename. -->
         <a href="post/post-1.html" class="card">
-          <img src="assets/images/project-1.jpg" alt="" loading="lazy">
+          <img src="assets/images/project-1.jpg" alt="" loading="lazy" width="545" height="400">
           <div class="card-text">
             <h4>Post 1</h4>
             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut mi vitae integer ornare consectetur morbi
@@ -150,7 +156,7 @@
           </div>
         </a>
         <a href="post/post-2.html" class="card">
-          <img src="assets/images/project-2.jpg" alt="" loading="lazy">
+          <img src="assets/images/project-2.jpg" alt="" loading="lazy" width="545" height="400">
           <div class="card-text">
             <h4>Post 2</h4>
             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut mi vitae integer ornare consectetur morbi
@@ -160,7 +166,7 @@
           </div>
         </a>
         <a href="post/post-3.html" class="card">
-          <img src="assets/images/project-3.jpg" alt="" loading="lazy">
+          <img src="assets/images/project-3.jpg" alt="" loading="lazy" width="545" height="400">
           <div class="card-text">
             <h4>Post 3</h4>
             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut mi vitae integer ornare consectetur morbi
@@ -170,7 +176,7 @@
           </div>
         </a>
         <a href="post/post-4.html" class="card">
-          <img src="assets/images/project-4.jpg" alt="" loading="lazy">
+          <img src="assets/images/project-4.jpg" alt="" loading="lazy" width="545" height="400">
           <div class="card-text">
             <h4>Post 4</h4>
             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut mi vitae integer ornare consectetur morbi
@@ -183,23 +189,23 @@
     </section>
     <section id="projects" class="section">
       <h3>Recent<br />Projects</h3>
-      <div class="cards">
+      <div class="cards animate-left">
         <div class="card">
-          <img src="assets/images/project-1.jpg" alt="" loading="lazy">
+          <img src="assets/images/project-1.jpg" alt="" loading="lazy" width="545" height="400">
           <div class="card-text">
             <h4>Project 1</h4>
             <p>E-Commerce, Stripe, Shopping Cart</p>
           </div>
         </div>
         <div class="card">
-          <img src="assets/images/project-2.jpg" alt="" loading="lazy">
+          <img src="assets/images/project-2.jpg" alt="" loading="lazy" width="545" height="400">
           <div class="card-text">
             <h4>Project 2</h4>
             <p>Ordering, Stripe Payments</p>
           </div>
         </div>
         <div class="card">
-          <img src="assets/images/project-3.jpg" alt="" loading="lazy">
+          <img src="assets/images/project-3.jpg" alt="" loading="lazy" width="545" height="400">
           <div class="card-text">
             <h4>Project 3</h4>
             <p>CMS, Blog, Contact Form</p>
@@ -207,7 +213,7 @@
 
         </div>
         <div class="card">
-          <img src="assets/images/project-4.jpg" alt="" loading="lazy">
+          <img src="assets/images/project-4.jpg" alt="" loading="lazy" width="545" height="400">
           <div class="card-text">
             <h4>Project 4</h4>
             <p>Front-end Design</p>
@@ -217,7 +223,7 @@
     </section>
     <section id="contact" class="section">
       <h3>Get in<br />Touch</h3>
-      <div class="contacts">
+      <div class="contacts fade-up">
         <div class="contact-wrap">
           <h4>Have a business proposal?<br />Drop us a line...</h4>
           <a href="mailto:email@email.com" class="email"><i class="fas fa-envelope"></i>

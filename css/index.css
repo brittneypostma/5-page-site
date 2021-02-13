@@ -15,6 +15,11 @@
   align-self: start;
 }
 
+.heading > div {
+  opacity: 0;
+  animation: fade-in var(--long) forwards;
+}
+
 .heading .accent-text {
   font-size: 3rem;
 }
@@ -36,6 +41,8 @@
   display: grid;
 }
 
+
+
 .big-links {
   font-size: var(--heading-4);
   font-family: var(--font-heading);
@@ -51,17 +58,23 @@
 .bottom-links > a:nth-child(1) {
   margin-right: var(--2xl);
 }
+.bottom-links > .big-links {
+  opacity: 0;
+  animation: fade-right var(--short) forwards;
 
+}
 .profile-img {
   margin-right: var(--md);
 }
 
 .side {
-  transform: rotate(-90deg);
+  /* transform: rotate(-90deg); */
   grid-area: 2/2/-1/-1;
   justify-self: center;
   position: absolute;
   bottom: 120px;
+  opacity: 0;
+  animation: side var(--short) forwards;
 }
 
 .side a::before {
@@ -71,6 +84,7 @@
 .side a:hover::before {
   width: 50%;
 }
+
 
 /* *Breakpoints* */
 @media (min-width: 1200px) {

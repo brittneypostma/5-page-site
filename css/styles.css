@@ -29,7 +29,7 @@
   --heading-1: clamp(2.75rem, 2.75rem + 2vw, 4rem);
   --heading-2: clamp(2.5rem, 2rem + 2vw, 3rem);
   --heading-3: clamp(2rem, 1.5rem + 2vw, 2.5rem);
-  --heading-4: clamp(1.5rem, 2rem + 2vw, 2rem);
+  --heading-4: clamp(1.5rem, 1.5rem + 2vw, 1.75rem);
   --text-base: clamp(1rem, 1rem + 1vw, 1.25rem);
   --text-sm: clamp(0.75rem, 0.75rem + 1vw, 1rem);
 
@@ -64,7 +64,9 @@
   --2xl: 2.5rem;
   --3xl: 3rem;
 
-  /* *Transition* */
+  /* *Transitions and Animations* */
+  --short: 1s;
+  --long: 2s;
   --transition: all 150ms cubic-bezier(0.4, 0, 0.2, 1);
 
   /* *Intentions* */
@@ -107,7 +109,9 @@ body {
   font-weight: 400;
   line-height: 1.6;
   color: var(--text-color);
+  overflow-x: hidden;
 }
+
 .cards {
   display: flex;
   flex-wrap: wrap;
@@ -115,6 +119,7 @@ body {
   gap: var(--3xl);
   justify-content: center;
 }
+
 .card {
   background: var(--card-bg);
   display: grid;
@@ -366,9 +371,14 @@ footer {
 
 /* *Pages* */
 /* Contact */
+#contact {
+  place-items: center;
+}
+
 .contacts {
   display: grid;
   gap: var(--md);
+  place-content: center;
 }
 
 .contact-img {
@@ -448,11 +458,16 @@ h4 {
 
 /* *Breakpoints* */
 @media (min-width: 1200px) {
+  #contact {
+    place-items: start;
+  }
+
   .contacts {
     display: flex;
     flex-wrap: wrap;
     gap: var(--md);
     justify-content: space-between;
+    width: 100%;
   }
 
   .contact-img {
@@ -494,3 +509,34 @@ h4 {
     padding: var(--md) var(--3xl) var(--2xl);
   }
 }
+
+/* *Animations* */
+@keyframes side {
+  from {
+    transform: translateY(-25vh) rotate(-90deg);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0) rotate(-90deg);
+  }
+}
+
+@keyframes fade-in {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes fade-right {
+  from {
+    transform: translateX(-25vw);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
